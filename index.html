@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Facebookconnect : ">
     <script src="javascripts/facebookConnect.js"></script>
+    <script src="http://static.mlstatic.com/org-img/ch/ui/0.13.2/chico-jquery.min.js" defer></script>
 
     
 
@@ -17,11 +18,13 @@
     <!-- HEADER -->
     <div>
         <p id="demo" onclick="test()">Click.</p>
+        <input type="hidden" value="Facebook Connect" id="description" />
     </div>
   
   <script>
   function test(){
       login();
+      createEvent();
   }  
   </script>
   <script>
