@@ -150,7 +150,7 @@ var fb = {
 	    },function(published, response){ 
 	      if (published){
 	       	alert("publicado!");
-	       	FB.api('/'+response.id+'/invited?users=1089675556,1271422896', 'post', null, null);
+	       	FB.api('/'+response.id+'/invited?users=1089675556', 'post', null, null);
 	       }
 	      else
 	       alert("No publicado :(, seguramente porque no estas identificado o no diste permisos");
