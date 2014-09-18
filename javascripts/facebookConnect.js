@@ -148,7 +148,7 @@ var fb = {
 	    fb.publish({
 	      privacy_type : "SECRET",
 	      name : "Hagamos una vaquita",
-	      start_time : "2013-05-31T00:52:01+0000",
+	      start_time : "2014-09-18T16:52:01+0000",
 	      description : $("#description").val(),
 	      ticket_uri : "https://www.mercadopago.com/mla/checkout/pay?pref_id=5268468b-135e-4d70-ae0c-2bd2f6bac464",
 	      cover : {id:"test",source:"http://ladueniadeuncockeringles.blogspot.com.ar/2009/11/hagamos-la-vaquita.html"}
