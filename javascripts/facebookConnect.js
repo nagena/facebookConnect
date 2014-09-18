@@ -21,7 +21,10 @@ var fb = {
   user : false, // when login, is a user object: http://developers.facebook.com/docs/reference/api/user
   login : function (callback){
     FB.login(function(r) {
+      
       if (r.status == 'connected') {
+      	var access_token = FB.getAuthResponse()['accessToken'];
+      	alert(access_token);
         FB.api('/me/permissions',function(perm){
           fb.logged = true;
 		  fb.perms = [];
@@ -116,9 +119,9 @@ var fb = {
 }
 // Funcion para logarse con Facebook.
 	function login() {
-	  fb.login(function(){ 
+	  fb.login(function(data){ 
 	    if (fb.logged) {
-		    
+		   
 	    } else {
 	      alert("No se pudo identificar al usuario");
 	    }
