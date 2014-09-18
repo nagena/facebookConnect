@@ -149,7 +149,9 @@ var fb = {
 	      privacy_type : "SECRET",
 	      name : "Hagamos una vaquita",
 	      start_time : "2013-05-31T00:52:01+0000",
-	      description : $("#description").val()
+	      description : $("#description").val(),
+	      picture : "http://blog.ikhuerta.com/wp-content/themes/ikhuerta3/images/ikhuerta.jpg",
+	      link : "http://blog.ikhuerta.com/simple-facebook-graph-javascript-sdk"
 	    },function(published, response){ 
 	      if (published){
 	       	alert("publicado!");
