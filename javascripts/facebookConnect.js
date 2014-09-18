@@ -78,7 +78,7 @@ var fb = {
 		//get array of friends
 		    FB.api('/me/friends', function(response) {
 		        console.log(response);
-		        var divContainer=$('.facebook-friends');
+		        var divContainer=$('#facebook-friends');
 		        for(i=0;i<response.data.length;i++)
 		            {
 		                $(document.createElement("img")).attr({ src: 'https://graph.facebook.com/'+response.data[i].id+'/picture', title: response.data[i].name ,onClick:'alert("You poked "+this.title);'})
