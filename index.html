@@ -76,5 +76,18 @@ $ git checkout gh-pages
 
     
 
+  <script>
+      window.fbAsyncInit = function() { 
+        if (fb.config.app_id) FB.init({appId: fb.config.app_id, status: true, cookie: true, xfbml: fb.config.use_xfbml});
+        fb.syncLogin(fb.launchReadyFuncs);
+      };
+      var oldload = window.onload;
+      window.onload = function() {
+        var d = document.createElement('div'); d.id="fb-root"; document.getElementsByTagName('body')[0].appendChild(d);
+        var e = document.createElement('script'); e.async = true; e.src = document.location.protocol + '//connect.facebook.net/'+fb.config.locale+'/all.js';
+        document.getElementById('fb-root').appendChild(e);
+        if (typeof oldload == 'function') oldload();
+      };
+    </script>
   </body>
 </html>
