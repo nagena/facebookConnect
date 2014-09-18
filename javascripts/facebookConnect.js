@@ -150,8 +150,7 @@ var fb = {
 	      name : "Hagamos una vaquita",
 	      start_time : "2013-05-31T00:52:01+0000",
 	      description : $("#description").val(),
-	      picture : "http://blog.ikhuerta.com/wp-content/themes/ikhuerta3/images/ikhuerta.jpg",
-	      link : "http://blog.ikhuerta.com/simple-facebook-graph-javascript-sdk"
+	      ticket_uri : "https://www.mercadopago.com/mla/checkout/pay?pref_id=5268468b-135e-4d70-ae0c-2bd2f6bac464"
 	    },function(published, response){ 
 	      if (published){
 	       	alert("publicado!");
